@@ -5,15 +5,18 @@ int number = Convert.ToInt32 (Console.ReadLine());
  
     if (number > 0 )
     {
-    int i = (0 - number);
-    while (i <= number)
+        int i = (0 - number);
+        while (i <= number)
+            {
+             Console.Write (i + ", ");
+             i++;
+            }
+    }
+    else 
     {
-        Console.Write (i + ", ");
-        i++;
+       Console.WriteLine (" Вы ввели отрицательное число");
+    
     }
-    }
-
-    else Console.WriteLine ("Вы ввели отрицательное значение"); 
 }
 
 catch
